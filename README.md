@@ -1,9 +1,8 @@
-# DigiID
+# Digi-ID
 
-This is the javascript implementation of the DigiID authentication protocol.
-Checkout the original Ruby version at https://github.com/digiid/digiid-ruby
+This is the javascript implementation of the Digi-ID Open Authentication protocol.
 
-Basically, what the module does is build a message challenge and verifying the signature.
+Basically, this module builds a message challenge and then verifies the signature.
 
 ## Installation
 
@@ -32,6 +31,8 @@ One example of callback could be `www.site.com/callback`. A callback cannot have
 default the POST call will be done using `https`. If you need to tell the wallet to POST on
 `http` then you need to add `unsecure:true`.
 
+Please note: Unsecure should NOT be used in production and is only for testing
+
 ```
 var digiid = new DigiID({nonce:nonce, callback:callback, unsecure:true});
 ```
@@ -45,13 +46,13 @@ digiid.uri
 This is the uri which will trigger the wallet when clicked (or scanned as QRcode). For instance :
 
 ```
-digiid://digiid-demo.herokuapp.com/callback?x=987f20277c015ce7
+digiid://digiid.digibyteprojects.com/callback?x=987f20277c015ce7
 ```
 
 If you added `unsecure:true` when initializing the object then uri will be like :
 
 ```
-digiid://digiid-demo.herokuapp.com/callback?x=987f20277c015ce7&u=1
+digiid://digiid.digibyteprojects.com/callback?x=987f20277c015ce7&u=1
 ```
 
 To get the uri as QRcode :
@@ -60,7 +61,7 @@ To get the uri as QRcode :
 digiid.qrcode
 ```
 
-This is actualy an URL pointing to the QRcode image.
+This is actually a URL pointing to the QRcode image.
 
 ### Verification
 
@@ -89,39 +90,12 @@ Returns `true` if the submitted URI is valid and corresponds to the correct `cal
 digiid.signatureValid()
 ```
 
-If returns `true`, then you can authenticate the user's session with `address` (public Bitcoin
-address used to sign the challenge).
+If returns `true`, then you can authenticate the user's session with `address` (public
+DigiByte address used to sign the challenge).
 
 
 ## Integration example
 
-JavaScript application using the digiid lib: https://github.com/porkchop/digiid-js-demo
+JavaScript application using the Digi-ID lib: https://github.com/digibyte/digiid-js
 
-Live demonstration: http://digiid-js-demo.herokuapp.com/
-
-## In the Wild
-
-The following projects use digiid-js.
-
-If you are using digiid-js in a project, app, or module, get on the list below
-by getting in touch or submitting a pull request with changes to the README.
-
-### Startups & Apps
-
-- [Decryptocoin](http://decryptocoin.com/)
-
-## Author
-Aaron Caswell
-aaron@captureplay.com
-
-## Credits
-Eric Larchevêque (The creator of the DigiID protocol and the original Ruby gem this code is based on)
-elarch@gmail.com
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Live demonstration: http://digiid.digibyteprojects.com

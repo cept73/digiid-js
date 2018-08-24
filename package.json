@@ -1,11 +1,11 @@
 {
   "name": "digiid",
-  "description": "JavaScript implementation of the DigiID authentication protocol: https://github.com/bitid/bitid",
-  "version": "0.0.3",
+  "description": "JavaScript implementation of the Digi-ID authentication protocol: https://github.com/digibyte/digiid-js",
+  "version": "0.1",
   "author": {
-    "name": "Aaron Caswell",
-    "email": "aaron@captureplay.com",
-    "url": "https://github.com/porkchop"
+    "name": "DigiByte",
+    "email": "info@digibyte.io",
+    "url": "https://github.com/digibyte"
   },
   "dependencies": {
     "digibyte-message": "git://github.com/digicontributer/bitcore-message.git#9d9c8ad30158db25f683e2dee746a14a9d7ec8a0"
