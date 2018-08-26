@@ -33,6 +33,12 @@ mocha
 
 ### Challenge
 
+Plug library:
+
+```
+var DigiID = require('./lib/digiid');
+```
+
 To build a challenge, you need to initialize a `DigiID` object with a `nonce` and a `callback`.
 
 ```
