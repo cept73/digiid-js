@@ -10,13 +10,22 @@ Basically, this module builds a message challenge and then verifies the signatur
     $ npm install should
 
 Optional, to make tests:
+
     $ npm install mocha
 
 ## Usage
+
     Run in the site root folder.
 
-    Start: `node index.js`
-    Tests in test/index.js: `mocha`
+Start: 
+```
+node index.js
+```
+
+Tests in test/index.js:
+```
+mocha
+```
 
 ### Challenge
 
