@@ -6,6 +6,9 @@ Basically, this module builds a message challenge and then verifies the signatur
 
 ## Installation
 
+This application works under Node.Js, so need to install it from: `https://nodejs.org/en/`
+Then:
+
     $ npm install digicore-message
     $ npm install should
 
