@@ -3,7 +3,7 @@
  * Module dependencies.
  */
 
-var DigiID = require('../')
+var DigiID = require('../lib/digiid')
   , should = require('should');
 
 DigiID.version.should.match(/^\d+\.\d+\.\d+$/);
@@ -31,7 +31,7 @@ describe('DigiID', function() {
       should.exist(digiid._uri);
       'digiid:'.should.equal(digiid._uri.protocol);
       'localhost'.should.equal(digiid._uri.hostname);
-      digiid._uri.port.should.eql(3000);
+      digiid._uri.port.should.eql('3000');
       '/callback'.should.equal(digiid._uri.path);
       digiid._uri.href.should.equal(uri);
 

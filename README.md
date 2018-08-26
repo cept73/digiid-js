@@ -6,15 +6,17 @@ Basically, this module builds a message challenge and then verifies the signatur
 
 ## Installation
 
-Add this line to your application's package.json dependencies:
+    $ npm install digicore-message
+    $ npm install should
 
-    'digiid': 'latest'
-
-Or install it yourself as:
-
-    $ npm install digiid
+Optional, to make tests:
+    $ npm install mocha
 
 ## Usage
+    Run in the site root folder.
+
+    Start: `node index.js`
+    Tests in test/index.js: `mocha`
 
 ### Challenge
 
