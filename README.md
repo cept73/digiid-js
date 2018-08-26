@@ -6,7 +6,8 @@ Basically, this module builds a message challenge and then verifies the signatur
 
 ## Installation
 
-This application works under Node.Js, so need to install it from: `https://nodejs.org/en/`
+This application works under Node.js, so need to install it from: `https://nodejs.org/en/`
+
 Then:
 
     $ npm install digicore-message
@@ -18,7 +19,7 @@ Optional, to make tests:
 
 ## Usage
 
-    Run in the site root folder.
+Run in the site root folder.
 
 Start: 
 ```
